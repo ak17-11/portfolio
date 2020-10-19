@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Anmol Kaur</title>
+<link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <header>
+    <a href="index.html" class="logo">Anmol Kaur</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+       
+        </ul>
+    
+    </header>
+<section class="banner" id="home">
+
+<div class="textBx">
+    <h2 >ANMOL KAUR</h2>
+    <a href="#me" class="btn">About me</a>
+    </div>
+    
+    </section>
+    <section class="about" id="me">
+    <div class="heading " >
+        <h2>To Sum Me Up</h2><br>
+        </div>
+    <div class="content">
+        <div class="contentBx w50">
+        
+            <p ><center>Currently pursuing my Bachelors in Computer Science at Shri Guru Tegh Bahadur Khalsa College, Delhi University.I love to create. I am passionate about programming and design. I like to travel and </center></p>
+        </div>
+        <div class="w50">
+        <img src="img/me.jpeg" class ="img">
+        </div>
+        </div>
+    
+    </section>
+    <section class="skills" id="skills">
+    <div class="heading white">
+        <h2>SKILLS</h2><br>
+        </div>
+        <div class="html">
+        <div class="tag-html">
+            <p>HTML</p>
+            </div>
+        <div class="progressbar">
+            <div class="bar-html"></div>
+            </div>
+        </div>
+        
+         <div class="html">
+        <div class="tag-css">
+            <p>CSS</p>
+            </div>
+        <div class="progressbar">
+            <div class="bar-css"></div>
+            </div>
+        </div> 
+        <div class="html">
+        <div class="tag-javascrpt">
+            <p>JavaScript</p>
+            </div>
+        <div class="progressbar">
+            <div class="bar-javascript"></div>
+            </div>
+        </div> 
+        <div class="html">
+        <div class="tag-cpp">
+            <p>C++</p>
+            </div>
+        <div class="progressbar">
+            <div class="bar-cpp"></div>
+            </div>
+        </div> 
+        <div class="html">
+        <div class="tag-java">
+            <p>Java</p>
+            </div>
+        <div class="progressbar">
+            <div class="bar-java"></div>
+            </div>
+        </div>
+        
+        </section>
+    
+    
+        <div class="parallax" >
+           
+         <div class="textBx">
+    <h3><b>HAVE AN IDEA?</b></h3>
+          <p> We can work on it together. Say hello!</p>
+          <a href="https://github.com/ak17-11" class="btn">My Work</a>
+    </div>   
+      
+           </div>
+    
+<footer id="contact" >
+    <ul class="icons">
+        <li><a href="mailto:kauranmol81@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://github.com/ak17-11"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/boredgirlwithaphone/" ><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/anmol.kaur.1865" ><i class="fab fa-facebook"></i></a></li>
+									
+		</ul><br>
+		<center>EMAIL: KAURANMOL81@GMAIL.COM</center><br><br><br>
+		
+</footer>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        var header=document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY>180)
+    })
+    
+        function toggleMenu(){
+            var menuToggle=document.querySelector('.toggle');
+            var menu=document.querySelector('.menu');
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active');
+        }
+        
+        window.onbeforeunload=function(){
+    window.scrollTo(0,0);
+}
+        
+        
+    </script>
+    
+  
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+     <script src="js/script.js"></script>
