@@ -41,7 +41,7 @@ section{
     font-stretch: expanded;
     color: #fff;
     font-weight: 100;
-    line-height: 1.0em;
+    line-height: 1.5em;
     margin-left: 0;
 }
 
@@ -413,13 +413,12 @@ footer ul li a:hover{
       height:fit-content;
     }
     
-    .textBx h3{
-      font-size:24px;
-
+       .textBx h3{
+      font-size:22px;
     }
 
     .textBx p{
-      font-size:20px;
+      font-size:19px;
     }
     
     .contentBx{
