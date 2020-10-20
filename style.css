@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  /*import the google font : poppins */
+
+/* attributes common for every class */
 *
 {
 margin:0;
@@ -6,45 +8,46 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
+
+/*setting the margin and padding to 0 so that there is no space between the elements of the website and the window */
 body{
     margin: 0;
     padding: 0;
 }
 
+/* for all sections */
 section{
     padding:100px;
-    
 }
 
+/* attributes to set the background image and add a parallax effect to it */
 .banner{
     position: relative;
     min-height: 100vh;
     background: url("img/anmol2.jpeg");
     
-    background-color: #111;
     background-size:cover;
     background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-     background-attachment: fixed;
- 
-  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
 }
 
 
-
+/* for the name displayed on top of the image */
 .banner h2{
     font-size: 20px;
-    font-stretch: expanded;
+    
     color: #fff;
     font-weight: 100;
     line-height: 1.5em;
     margin-left: 0;
 }
 
+/*for the buton displayed on top the image */
 .btn{
     position: relative;
     background: #2196f3;
@@ -59,6 +62,12 @@ section{
     font-weight: 500;
 }
 
+/* when the mouse hovers over the button About me */
+.btn:hover{
+    font-size: 20px;
+}
+
+/* header class that contains the navigation bar */
 header{
     position:fixed;
     top:0;
@@ -70,15 +79,17 @@ header{
     justify-content:space-between ;
     align-items: center;
     transition: 0.5s;
-   background: #111;
+    background: #111;
 }
 
+/* attributes when the nav bar becomes sticky */
 header.sticky{
     background: #fff;
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
+/* attributes of the name that appears on the nav bar (it is not displayed when it is on the home page in desktop view) */
 header .logo{
     color: #fff;
     font-size: 24px;
@@ -89,26 +100,31 @@ header .logo{
     display: none;
 }
 
+/* name s displayed only when the nav bar is sticky */
 header.sticky .logo{
     color: #111;
     display: block;
 }
 
+/* when mouse is hovered on the name in the nav bar */
 header.sticky .logo:hover{
      transform: scale(1.2);
 }
 
+/* atrributes of the list of menu */
 header ul{
     position: relative;
     display: flex;
 }
 
+/* attributes of elements of the list */
 header ul li{
     position: relative;
     list-style: none;
     font-size: 21px;
 }
 
+/* anchor tag      */
 header ul li a{
     position: relative;
     display: inline-block;
@@ -118,18 +134,37 @@ header ul li a{
     
 }
 
+/* when mouse is hovered on the list elemens */
 header ul li a:hover{
    transform: scale(1.2);
 }
 
+/* for sticky nav bar */
 header.sticky ul li a{
     color: #111;
 }
 
+/* attributes of the sticky nav bar when mouse is hovered */
 header.sticky ul li a:hover{
    transform: scale(1.2);
 }
 
+/* the class scroll is created in the internal js for the sicky nav bar*/
+.scroll{
+    width: 100%;
+    text-align:left;
+    margin-bottom: 30px;
+   padding-top: 200px;
+ 
+    margin-left: 30px;
+    padding-left: 50px;
+   
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/* for the headings of the sections */
 .heading{
  width: 100%;
     text-align: center;
@@ -141,11 +176,14 @@ header.sticky ul li a:hover{
     font-weight: 600;
     font-size: 30px;
 }
+/*-----------------------------------*/
+
+
 
 .textBx h2{
     font-size: 60px;
-  
 }
+
 .content{
     display:flex;
     justify-content: space-between;
@@ -156,26 +194,29 @@ header.sticky ul li a:hover{
     padding-top: 50px;
 }
 
-
+/* divide the into two columns*/
 .w50{
     min-width: 50%;
 }
 
+/* img class */
 img{
     max-width: 100%;
 }
 
+/* setting height and bgcolor for skills section*/
 .skills{
     height: 100vh;
     background: #111;
 }
 
-
+/* skills heading is white as the background is black*/
 .heading.white{
     color: #fff;
 }
 
-.html{
+/* attributes of archive class in the skills that contains the name of the skill and progress bar */
+.archive{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -221,7 +262,10 @@ div[class^='bar-']{
 .bar-html, .bar-css, .bar-javascript, .bar-cpp, .bar-java{
     width: calc(0-6px);
 }
+/*-------------------------------------------------------*/
 
+
+/* creating a parallax effect for the image above the footer*/
 .parallax {
   /* The image used */
   background-image: url("img/anmol2.jpeg") ;
@@ -238,43 +282,23 @@ div[class^='bar-']{
   background-size: cover;
 }
  
-
-
-
-.scroll{
- width: 100%;
-    text-align:left;
-    margin-bottom: 30px;
-   padding-top: 200px;
- 
-    margin-left: 30px;
-    padding-left: 50px;
-   
-    color: #fff;
-    font-size: 25px;
-}
-
-
 .parallax .textbx{
-     width: 100%;
-    text-align:left;
-    margin-bottom: 30px;
+   width: 100%;
+   text-align:left;
+   margin-bottom: 30px;
    padding-top: 200px;
-
-    padding-left: 100px;
-   
-    color:#fff;
-    font-size: 25px;
+   padding-left: 100px;
+   color:#fff;
+   font-size: 25px;
 }
+/*------------------------------------------------------------*/
 
+/*------------------------Footer------------------------------*/
 footer{
     width: 100%;
     height: auto;
     margin: auto;
     padding: 20px 0px;
-   
-  
-    
 }
 
 
@@ -301,11 +325,15 @@ footer ul li a{
 footer ul li a:hover{
     color:darkgrey;
 }
+/*--------------------------------------------------------------*/
+
 
 
 /*responsive*/
 
 @media (max-width: 991px){
+    
+ /*------------------------side bar menu------------------------------*/
     header, header.sticky{
         padding: 20px 50px;
         z-index: 1000;
@@ -368,29 +396,31 @@ footer ul li a:hover{
     
     header.sticky .toggle{
         filter: invert(1);
-        
     }
+    
+    /*-------------------------------------------------------------------*/
+    
     
     section{
         padding: 100px 50px;
     }
     
+    /*no parallax effect on smaller devices*/
     .banner{
         padding: 150px 50px 100px;
         background-attachment: scroll;
-       
     }
     
     .banner h2{
         font-size: 34px;
-     
     }
     
+    /*no parallax effect on smaller devices*/
     .parallax{
          background-attachment: scroll;
     }
     
-      .parallax .textbx{
+    .parallax .textbx{
       padding-top:300px;
     }
     
@@ -398,22 +428,25 @@ footer ul li a:hover{
        margin-top: 10px;
         padding: 10px 20px;
         font-size: 16px;
-       
     }
+    
     .heading h2{
         font-size: 24px;
     }
+    
     .content{
         flex-direction: column;
     }
+    
     .w50{
         margin-bottom: 20px;
     }
+    
     .skills{
       height:fit-content;
     }
     
-       .textBx h3{
+    .textBx h3{
       font-size:22px;
     }
 
